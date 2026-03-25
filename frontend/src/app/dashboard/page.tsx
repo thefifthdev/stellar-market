@@ -201,9 +201,6 @@ export default function DashboardPage() {
   ).length;
 
   const applicationsCount = applications.length;
-  const pendingApplicationsCount = applications.filter(
-    (a) => a.status === "PENDING",
-  ).length;
 
   const postedJobsCount = jobs.filter((j) => j.client?.id === user?.id).length;
   const applicantsToReviewCount = applicants.length;
