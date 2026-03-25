@@ -168,6 +168,7 @@ router.get("/",
 
     // Add cache hit status to response headers for debugging
     res.set('X-Cache-Hit', hit.toString());
+    res.json(data);
   })
 );
 
